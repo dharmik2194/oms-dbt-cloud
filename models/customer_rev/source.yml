@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: landing
+    database: SLEEKMART_OMS        # e.g. RAW_DB
+    schema: L1_LANDING                  # schema name in Snowflake
+
+    tables : 
+      # Generate Model
+      - name : customers
+        identifier : customers
+
+      - name : orders
+        identifier : orders
+
+      - name : orderitems
+        identifier : orderitems
+
+      - name : employees
+        identifier : employeesf
